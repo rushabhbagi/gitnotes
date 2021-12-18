@@ -284,31 +284,31 @@ button {
   background-color: var(--first-color-alt);
 }
 
-/*=============== GIVING ===============*/
-.giving__container {
+/*=============== department ===============*/
+.department__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem 1.5rem;
 }
 
-.giving__content {
+.department__content {
   text-align: center;
 }
 
-.giving__img {
+.department__img {
   width: 100px;
   transition: 0.3s;
 }
 
-.giving__title {
+.department__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-25);
 }
 
-.giving__description {
+.department__description {
   font-size: var(--small-font-size);
 }
 
-.giving__img:hover {
+.department__img:hover {
   transform: translateY(-0.25rem);
 }
 
@@ -334,18 +334,18 @@ button {
   justify-self: center;
 }
 
-/*=============== GIFT ===============*/
-.gift__container {
+/*=============== semester ===============*/
+.semester__container {
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
 }
 
-.gift__container_text {
+.semester__container_text {
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
 }
 
-.gift__card {
+.semester__card {
   display: grid;
   position: relative;
   background-color: var(--container-color);
@@ -354,14 +354,14 @@ button {
   border-radius: 0.75rem;
 }
 
-.gift__img {
+.semester__img {
   width: 100px;
   justify-self: center;
   margin-bottom: var(--mb-0-25);
   transition: 0.3s;
 }
 
-.gift__icon {
+.semester__icon {
   font-size: 1.25rem;
   color: var(--first-color);
   position: absolute;
@@ -370,16 +370,16 @@ button {
   cursor: pointer;
 }
 
-.gift__price {
+.semester__price {
   font-size: var(--h3-font-size);
 }
 
-.gift__title {
+.semester__title {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
 }
 
-.gift__card:hover .gift__img {
+.semester__card:hover .semester__img {
   transform: translateY(-0.25rem);
 }
 
@@ -512,11 +512,11 @@ button {
     margin-right: var(--mb-1);
   }
 
-  .giving__container {
+  .department__container {
     gap: 1rem;
   }
 
-  .gift__container {
+  .semester__container {
     grid-template-columns: 150px;
     justify-content: center;
   }
@@ -528,7 +528,7 @@ button {
     padding: 0 8rem;
   }
 
-  .giving__container {
+  .department__container {
     grid-template-columns: repeat(2, 142px);
     justify-content: center;
     gap: 2.5rem 3.5rem;
@@ -538,8 +538,8 @@ button {
     padding: 0 4rem;
   }
 
-  .gift__container {
-    grid-template-columns: repeat(2, 180px);
+  .semester__container {
+    grid-template-columns: repeat(2, 320px);
     justify-content: center;
     gap: 2rem;
   }
@@ -554,6 +554,14 @@ button {
   }
 }
 
+@media screen and (min-width: 707) {
+  .semester__container {
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
@@ -562,7 +570,7 @@ button {
     padding: 6.5rem 0 2rem;
   }
 
-  .semester_nav{
+  .semester_nav {
     padding: 10px 2rem;
   }
 
@@ -602,7 +610,7 @@ button {
     padding: 0;
   }
 
-  .giving__container {
+  .department__container {
     grid-template-columns: repeat(3, 142px);
     column-gap: 5rem;
   }
@@ -615,13 +623,20 @@ button {
     padding: 0;
   }
 
-  .gift__container {
+  .semester__container {
     grid-template-columns: repeat(2, 450px);
     gap: 2.5rem;
   }
 
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 772px) {
+  .semester__container {
+    grid-template-columns: repeat(2, 350px);
+    gap: 2.5rem;
   }
 }
 
@@ -642,11 +657,11 @@ button {
     padding-right: 8rem;
   }
 
-  .giving__container {
+  .department__container {
     column-gap: 8rem;
     padding-top: 2rem;
   }
-  .giving__img {
+  .department__img {
     width: 120px;
   }
 
@@ -657,17 +672,19 @@ button {
     padding-right: 7rem;
   }
 
-  .gift__container {
+  .semester__container {
     padding-top: 2rem;
+    grid-template-columns: repeat(2, 450px);
+    gap: 2.5rem;
   }
-  .gift__card {
+  .semester__card {
     padding: 2rem 1.5rem 1.5rem;
   }
-  .gift__img {
+  .semester__img {
     width: 120px;
     margin-bottom: var(--mb-1);
   }
-  .gift__title {
+  .semester__title {
     font-size: var(--small-font-size);
   }
 
@@ -744,10 +761,9 @@ button {
 
 .nav_button :hover {
   background: var(--first-color);
-  cursor: pointer;
 }
 
-.gift_text :hover {
+.semester_text :hover {
   color: var(--first-color);
 }
 
