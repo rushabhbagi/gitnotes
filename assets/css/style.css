@@ -464,6 +464,22 @@ button {
   right: -4rem;
 }
 
+/* ===============Download Button============= */
+.download_now {
+  padding: 5px 15px;
+  margin: 0 24px;
+}
+
+/* .download_now .button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1.15rem 2.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 3rem;
+  transition: 0.3s;
+} */
+
 /*=============== SCROLL UP ===============*/
 .scrollup {
   position: fixed;
@@ -507,6 +523,8 @@ button {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+
+
 @media screen and (max-width: 320px) {
   .container {
     margin-left: var(--mb-1);
@@ -518,11 +536,36 @@ button {
   }
 
   .semester__container {
-    grid-template-columns: 150px;
+    grid-template-columns: 280px;
     justify-content: center;
+  }
+
+  .download_now {
+    padding: 0 15px;
+    margin: 0 24px;
+    justify-content: center;
+  }
+
+  .button {
+    padding: 1.15rem 25px;
   }
 }
 
+@media screen and (min-width: 375px){
+  .download_now{
+    padding: 0 15px;
+    margin: 3px 30px;
+  }
+}
+
+@media screen and (min-width: 411px) {
+  /* .button {
+    padding: 1.15rem 6rem;
+  } */
+  .download_now{
+    margin: 5px 50px;
+  }
+}
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .home__description {
@@ -553,9 +596,14 @@ button {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .download_now {
+    padding: 0 15px;
+    margin: 0 24px;
+  }
 }
 
-@media screen and (min-width: 707) {
+@media screen and (min-width: 707px) {
   .semester__container {
     grid-template-columns: repeat(2, 250px);
     justify-content: center;
@@ -768,8 +816,14 @@ button {
   color: var(--first-color);
 }
 
-
 .active-Semester {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
 }
+
+.downloadnow {
+  width: fit-content;
+  align-items: center;
+}
+/* .download_now{
+  /* margin: 0 50px; */
