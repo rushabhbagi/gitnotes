@@ -520,10 +520,14 @@ button {
   background: hsl(355, 32%, 17%);
   border-radius: 1rem;
 }
-
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
+.home__icon{
+  margin: 10px;
+  color: var(--first-color);
+  font-size: 1.25rem;
+}
 
 @media screen and (max-width: 320px) {
   .container {
@@ -549,12 +553,30 @@ button {
   .button {
     padding: 1.15rem 25px;
   }
+
+  .home__container,
+  .celebrate__container,
+  .message__container {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  .grid {
+    justify-content: space-between;
+    align-content: space-around;
+  }
 }
 
-@media screen and (min-width: 375px){
-  .download_now{
+@media screen and (min-width: 375px) {
+  .download_now {
     padding: 0 15px;
     margin: 3px 30px;
+  }
+  .home__container,
+  .celebrate__container,
+  .message__container {
+    grid-template-columns: repeat(1);
+    align-items: center;
   }
 }
 
@@ -562,7 +584,7 @@ button {
   /* .button {
     padding: 1.15rem 6rem;
   } */
-  .download_now{
+  .download_now {
     margin: 5px 50px;
   }
 }
@@ -649,6 +671,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+
   .home__container {
     padding-top: 8rem;
   }
