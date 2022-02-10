@@ -1,222 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <!--=============== BOXICONS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Git Source - Notes, Question Papers</title>
-</head>
+        <title>Git Notes - Notes, Question Papers</title>
+    </head>
 
-<body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="assets/img/logo01-removebg-preview.png" alt="" class="nav__logo-img">
-                Git Source
-            </a>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo01-removebg-preview.png" alt="" class="nav__logo-img">
+                    Git Notes
+                </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#notes" class="nav__link">Notes</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#questionpaper" class="nav__link">Question Papers</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#results" class="nav__link">Results</a>
-                    </li>
-                </ul>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#notes" class="nav__link">Notes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#questionpaper" class="nav__link">Question Papers</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#results" class="nav__link">Results</a>
+                        </li>
+                    </ul>
 
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="nav__btns">
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
                 </div>
 
-                <!-- <img src="assets/img/nav-light.png" alt="" class="nav__img"> -->
-            </div>
-            <div class="nav__btns">
-                <!-- Theme change button -->
-                <!-- <i class='bx bx-moon change-theme' id="theme-button"></i> -->
+            </nav>
+        </header>
 
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home-removebg-preview.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">Heyy!! Engineers<br>Get Notes and Question papers </h1>
+                        <p class="home__description">
+                            We are providing notes and question papers of all engineering branches
+                        </p>
+                        <a href="#" class="button">Download now</a>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-        </nav>
-    </header>
+            <!--==================== department ====================-->
+            <section class="department section container">
+                <h2 class="section__title">
+                    Departments
+                </h2>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="assets/img/home-removebg-preview.png" alt="" class="home__img">
+                <div class="department__container grid">
+                    <a href="./cs.html">
+                        <div class="department__content">
+                            <img src="assets/img/cs-removebg-preview.png" alt="" class="department__img">
+                            <h3 class="department__title">Computer Science</h3>
+                            <p class="department__description"></p>
+                        </div>
+                    </a>
 
-                <div class="home__data">
-                    <h1 class="home__title">Heyy!! Engineers<br>Get Notes and Question papers </h1>
-                    <p class="home__description">
-                        We are providing notes and question papers of all engineering branches
+                    <a href="./ece.html">
+                        <div class="department__content">
+                            <img src="assets/img/ec-removebg-preview.png" alt="" class="department__img">
+                            <h3 class="department__title">Electronics & Communications</h3>
+                            <p class="department__description"></p>
+                        </div>
+                    </a>
+
+                    <a href="./mech.html">
+                        <div class="department__content">
+                            <img src="assets/img/mech-removebg-preview.png" alt="" class="department__img">
+                            <h3 class="department__title">Mechanical</h3>
+                            <p class="department__description"></p>
+                        </div>
+                    </a>
+
+                    <a href="./civil.html">
+                        <div class="department__content">
+                            <img src="assets/img/civil-removebg-preview.png" alt="" class="department__img">
+                            <h3 class="department__title">Civil</h3>
+                            <p class="department__description"></p>
+                        </div>
+                    </a>
+
+                    <a href="./cs.html">
+                        <div class="department__content">
+                            <img src="assets/img/is-removebg-preview.png" alt="" class="department__img">
+                            <h3 class="department__title">Information Science</h3>
+                            <p class="department__description"></p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="department__content">
+                            <img src="assets/img/notes-removebg-preview.png" alt="" class="department__img">
+                            <h3 class="department__title">First Year</h3>
+                            <p class="department__description"></p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo01-removebg-preview.png" alt="" class="footer__logo-img">
+                        Git Notes
+                    </a>
+
+                    <p class="footer__description">
+                        We provide notes & question papers <br> of all engineering branches.
                     </p>
-                    <a href="#" class="button">Download now</a>
                 </div>
-            </div>
-        </section>
 
-        <!--==================== department ====================-->
-        <section class="department section container">
-            <h2 class="section__title">
-                Departments
-                <!-- <br> Christmas -->
-            </h2>
+                <div>
+                    <h3 class="footer__title">Our Services</h3>
 
-            <div class="department__container grid">
-                <a href="./cs.html">
-                    <div class="department__content">
-                        <img src="assets/img/cs-removebg-preview.png" alt="" class="department__img">
-                        <h3 class="department__title">Computer Science</h3>
-                        <p class="department__description"></p>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Notes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Question Papers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Results</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Support</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Support center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Available On</h3>
+
+                    <div class="footer__aviables">
+                        <img src="assets/img/aviable1.png" alt="" class="footer__aviable-img">
+                        <img src="assets/img/aviable2.png" alt="" class="footer__aviable-img">
                     </div>
-                </a>
-
-                <a href="./ece.html">
-                    <div class="department__content">
-                        <img src="assets/img/ec-removebg-preview.png" alt="" class="department__img">
-                        <h3 class="department__title">Electronics & Communications</h3>
-                        <p class="department__description"></p>
-                    </div>
-                </a>
-
-                <a href="./mech.html">
-                    <div class="department__content">
-                        <img src="assets/img/mech-removebg-preview.png" alt="" class="department__img">
-                        <h3 class="department__title">Mechanical</h3>
-                        <p class="department__description"></p>
-                    </div>
-                </a>
-
-                <a href="./civil.html">
-                    <div class="department__content">
-                        <img src="assets/img/civil-removebg-preview.png" alt="" class="department__img">
-                        <h3 class="department__title">Civil</h3>
-                        <p class="department__description"></p>
-                    </div>
-                </a>
-
-                <a href="./cs.html">
-                    <div class="department__content">
-                        <img src="assets/img/is-removebg-preview.png" alt="" class="department__img">
-                        <h3 class="department__title">Information Science</h3>
-                        <p class="department__description"></p>
-                    </div>
-                </a>
-
-                <a href="">
-                    <div class="department__content">
-                        <img src="assets/img/notes-removebg-preview.png" alt="" class="department__img">
-                        <h3 class="department__title">First Year</h3>
-                        <p class="department__description"></p>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div>
-                <a href="#" class="footer__logo">
-                    <img src="assets/img/logo01-removebg-preview.png" alt="" class="footer__logo-img">
-                    Git Source
-                </a>
-
-                <p class="footer__description">
-                    We provide notes & question papers <br> of all engineering branches.
-                </p>
-            </div>
-
-            <div>
-                <h3 class="footer__title">Our Services</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Notes</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Question Papers</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Results</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="footer__title">Support</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">FAQs</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Support center</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="footer__title">Available On</h3>
-
-                <div class="footer__aviables">
-                    <img src="assets/img/aviable1.png" alt="" class="footer__aviable-img">
-                    <img src="assets/img/aviable2.png" alt="" class="footer__aviable-img">
                 </div>
             </div>
 
+            <span class="footer__copy">&#169; GitNotes. All rigths reserved</span>
+        </footer>
 
-            <img src="assets/img/footer1.png" alt="" class="footer__img1">
-            <img src="assets/img/footer2.png" alt="" class="footer__img2">
-        </div>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
 
-        <span class="footer__copy">&#169; GitSource. All rigths reserved</span>
-    </footer>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-    </a>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-</body>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 
 </html>
