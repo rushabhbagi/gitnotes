@@ -1,350 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <!--=============== BOXICONS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Computer Science</title>
-</head>
+        <title>Computer Science</title>
+    </head>
 
-<body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="./index.html" class="nav__logo">
-                <img src="assets/img/logo01-removebg-preview.png" alt="" class="nav__logo-img">
-                Git Notes
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#notes" class="nav__link">Notes</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#questionpaper" class="nav__link">Question Papers</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#results" class="nav__link">Results</a>
-                    </li>
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-
-                <!-- <img src="assets/img/nav-light.png" alt="" class="nav__img"> -->
-            </div>
-            <div class="nav__btns">
-                <!-- Theme change button -->
-                <!-- <i class='bx bx-moon change-theme' id="theme-button"></i> -->
-
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-            </div>
-
-        </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="assets/img/cs-removebg-preview.png" alt="" class="home__img">
-
-                <div class="home__data">
-                    <h1 class="home__title">Department of <br> Computer Science</h1>
-                    <p class="home__description">
-                    </p>
-                    <a href="#" class="button">Download now</a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== semester ====================-->
-        <section class="semester section container" id="semester">
-            <h2 class="section__title">Semester wise notes</h2>
-
-            <div class="nav semester_nav">
-                <span class="nav_button active-Semester" data-filter="all">ALL</span>
-                <span class="nav_button" data-filter=".third">3rd</span>
-                <span class="nav_button" data-filter=".forth">4th</span>
-                <span class="nav_button" data-filter=".fifth">5th</span>
-                <span class="nav_button" data-filter=".sixth">6th</span>
-                <span class="nav_button" data-filter=".seventh">7th</span>
-                <span class="nav_button" data-filter=".eighth">8th</span>
-            </div>
-
-            <div class="semester__container grid">
-                <article class="semester__card mix third">
-                    <h3 class="semester__price">3rd Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/cs/3sem/m3.html">
-                        <p class="semester_text">
-                            <span>
-                                <strong>18MATCS31 :</strong> Statical Numerical Fourier Techniques
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/3sem/18cs32.html">
-                        <p class="semester_text">
-                            <span><strong>18CS32 :</strong> Data Structures with C
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/3sem/18cs33.html">
-                        <p class="semester_text">
-                            <span><strong>18CS33 :</strong> Digital Electronics
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/3sem/18cs34.html">
-                        <p class="semester_text">
-                            <span><strong>18CS34 :</strong> Object Oriented Programming with JAVA
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/3sem/18cs35.html">
-                        <p class="semester_text">
-                            <span><strong>18CS35 :</strong> Computer Organization
-                            </span>
-                        </p>
-                    </a>
-                    <img src="./assets/img/line1.1.png" alt="">
-                    <p class="semester_text">
-                        <span><strong>18DMATCS31 :</strong> Calculus, Fourier Analysis and Linear Algebra
-                        </span>
-                    </p>
-
-                </article>
-
-                <article class="semester__card mix forth">
-                    <h3 class="semester__price">4th Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/cs/4sem/m4.html">
-                        <p class="semester_text">
-                            <span><strong>18MATCS41 :</strong> Discrete Mathematical Structures and Graph Theory
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/4sem/18cs42.html">
-                        <p class="semester_text">
-                            <span><strong>18CS42 :</strong> Operating System
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/4sem/18cs43.html">
-                        <p class="semester_text">
-                            <span><strong>18CS43 :</strong> Database Management System
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/4sem/18cs44.html">
-                        <p class="semester_text">
-                            <span><strong>18CS44 :</strong> Design and Analysis of Algorithm
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/4sem/18cs45.html">
-                        <p class="semester_text">
-                            <span><strong>18CS45 :</strong> Software Engineering
-                            </span>
-                        </p>
-                    </a>
-                    <img src="./assets/img/line1.1.png" alt="">
-                    <a href="./assets/modules/cs/4sem/18dcs41.html">
-                        <p class="semester_text">
-                            <span><strong>18DMATCS41 :</strong> Graph Theory and Discrete Mathematical Structures
-                            </span>
-                        </p>
-                    </a>
-                </article>
-
-                <article class="semester__card mix fifth">
-
-                    <h3 class="semester__price">5th Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/cs/5sem/18cs51.html">
-                        <p class="semester_text">
-                            <span><strong>18CS51 :</strong> Computer Network
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/5sem/18cs52.html">
-                        <p class="semester_text">
-                            <span><strong>18CS52 :</strong> Object Oriented Modeling and Design
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/5sem/18cs53.html">
-                        <p class="semester_text">
-                            <span><strong>18CS53 :</strong> Unix System Programming
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/5sem/18cs54.html">
-                        <p class="semester_text">
-                            <span><strong>18CS54 :</strong> Formal Languages and Automata Theory
-                            </span>
-                        </p>
-                    </a>
-                    <img src="./assets/img/line1.1.png" alt="">
-                    <a href="./assets/modules/cs/5sem/18dmatcs51.html">
-                        <p class="semester_text">
-                            <span><strong>18DMATCS51 :</strong>Numerical Methods and Probability
-                            </span>
-                        </p>
-                    </a>
-                </article>
-
-                <article class="semester__card mix sixth">
-
-                    <h3 class="semester__price">6th Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/cs/6sem/18cs61.html">
-                        <p class="semester_text">
-                            <span><strong>18CS61 :</strong> Artificial Intelligence and Machine Learning
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/6sem/18cs62.html">
-                        <p class="semester_text">
-                            <span><strong>18CS62 :</strong> Compiler Design
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/cs/6sem/18cs63.html">
-                        <p class="semester_text">
-                            <span><strong>18CS63 :</strong> Embedded Systems and IoT
-                            </span>
-                        </p>
-                    </a>
-                </article>
-
-                <article class="semester__card mix seventh">
-
-                    <h3 class="semester__price">7th Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/cs/7sem/">
-                        <p class="semester_text">
-                            <span><strong>18CS71 :</strong> Entrepreneurship and Management
-                            </span>
-                        </p>
-                    </a>
-                    <a href="">
-                        <p class="semester_text">
-                            <span><strong>18CS72 :</strong> Network Programming
-                            </span>
-                        </p>
-                    </a>
-                    <a href="">
-                        <p class="semester_text">
-                            <span><strong>18CS73 :</strong> Distributed Computing
-                            </span>
-                        </p>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div>
-                <a href="#" class="footer__logo">
-                    <img src="assets/img/logo01-removebg-preview.png" alt="" class="footer__logo-img">
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="./index.html" class="nav__logo">
+                    <img src="assets/img/logo01-removebg-preview.png" alt="" class="nav__logo-img">
                     Git Notes
                 </a>
 
-                <p class="footer__description">
-                    We provide notes & question papers <br> of all engineering branches.
-                </p>
-            </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#notes" class="nav__link">Notes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#questionpaper" class="nav__link">Question Papers</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#results" class="nav__link">Results</a>
+                        </li>
+                    </ul>
 
-            <div>
-                <h3 class="footer__title">Our Services</h3>
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </div>
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Notes</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Question Papers</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Results</a>
-                    </li>
-                </ul>
-            </div>
+            </nav>
+        </header>
 
-            <div>
-                <h3 class="footer__title">Support</h3>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/cs.png" alt="gitnotes-cs" class="home__img">
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">FAQs</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Support center</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Department of <br> Computer Science</h1>
+                        <p class="home__description">
+                        </p>
+                        <a href="#" class="button">Download now</a>
+                    </div>
+                </div>
+            </section>
 
-            <div>
-                <h3 class="footer__title">Available On</h3>
+            <!--==================== semester ====================-->
+            <section class="semester section container" id="semester">
+                <h2 class="section__title">Semester wise notes</h2>
 
-                <div class="footer__aviables">
-                    <img src="assets/img/aviable1.png" alt="" class="footer__aviable-img">
-                    <img src="assets/img/aviable2.png" alt="" class="footer__aviable-img">
+                <div class="nav semester_nav">
+                    <span class="nav_button active-Semester" data-filter="all">ALL</span>
+                    <span class="nav_button" data-filter=".third">3rd</span>
+                    <span class="nav_button" data-filter=".forth">4th</span>
+                    <span class="nav_button" data-filter=".fifth">5th</span>
+                    <span class="nav_button" data-filter=".sixth">6th</span>
+                    <span class="nav_button" data-filter=".seventh">7th</span>
+                    <span class="nav_button" data-filter=".eighth">8th</span>
+                </div>
+
+                <div class="semester__container grid">
+                    <article class="semester__card mix third">
+                        <h3 class="semester__price">3rd Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/cs/3sem/m3.html">
+                            <p class="semester_text">
+                                <span>
+                                    <strong>18MATCS31 :</strong> Statical Numerical Fourier Techniques
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/3sem/18cs32.html">
+                            <p class="semester_text">
+                                <span><strong>18CS32 :</strong> Data Structures with C
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/3sem/18cs33.html">
+                            <p class="semester_text">
+                                <span><strong>18CS33 :</strong> Digital Electronics
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/3sem/18cs34.html">
+                            <p class="semester_text">
+                                <span><strong>18CS34 :</strong> Object Oriented Programming with JAVA
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/3sem/18cs35.html">
+                            <p class="semester_text">
+                                <span><strong>18CS35 :</strong> Computer Organization
+                                </span>
+                            </p>
+                        </a>
+                        <img src="./assets/img/line1.1.png" alt="">
+                        <p class="semester_text">
+                            <span><strong>18DMATCS31 :</strong> Calculus, Fourier Analysis and Linear Algebra
+                            </span>
+                        </p>
+
+                    </article>
+
+                    <article class="semester__card mix forth">
+                        <h3 class="semester__price">4th Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/cs/4sem/m4.html">
+                            <p class="semester_text">
+                                <span><strong>18MATCS41 :</strong> Discrete Mathematical Structures and Graph Theory
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/4sem/18cs42.html">
+                            <p class="semester_text">
+                                <span><strong>18CS42 :</strong> Operating System
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/4sem/18cs43.html">
+                            <p class="semester_text">
+                                <span><strong>18CS43 :</strong> Database Management System
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/4sem/18cs44.html">
+                            <p class="semester_text">
+                                <span><strong>18CS44 :</strong> Design and Analysis of Algorithm
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/4sem/18cs45.html">
+                            <p class="semester_text">
+                                <span><strong>18CS45 :</strong> Software Engineering
+                                </span>
+                            </p>
+                        </a>
+                        <img src="./assets/img/line1.1.png" alt="">
+                        <a href="./assets/modules/cs/4sem/18dcs41.html">
+                            <p class="semester_text">
+                                <span><strong>18DMATCS41 :</strong> Graph Theory and Discrete Mathematical Structures
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+
+                    <article class="semester__card mix fifth">
+
+                        <h3 class="semester__price">5th Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/cs/5sem/18cs51.html">
+                            <p class="semester_text">
+                                <span><strong>18CS51 :</strong> Computer Network
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/5sem/18cs52.html">
+                            <p class="semester_text">
+                                <span><strong>18CS52 :</strong> Object Oriented Modeling and Design
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/5sem/18cs53.html">
+                            <p class="semester_text">
+                                <span><strong>18CS53 :</strong> Unix System Programming
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/5sem/18cs54.html">
+                            <p class="semester_text">
+                                <span><strong>18CS54 :</strong> Formal Languages and Automata Theory
+                                </span>
+                            </p>
+                        </a>
+                        <img src="./assets/img/line1.1.png" alt="">
+                        <a href="./assets/modules/cs/5sem/18dmatcs51.html">
+                            <p class="semester_text">
+                                <span><strong>18DMATCS51 :</strong>Numerical Methods and Probability
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+
+                    <article class="semester__card mix sixth">
+
+                        <h3 class="semester__price">6th Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/cs/6sem/18cs61.html">
+                            <p class="semester_text">
+                                <span><strong>18CS61 :</strong> Artificial Intelligence and Machine Learning
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/6sem/18cs62.html">
+                            <p class="semester_text">
+                                <span><strong>18CS62 :</strong> Compiler Design
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/cs/6sem/18cs63.html">
+                            <p class="semester_text">
+                                <span><strong>18CS63 :</strong> Embedded Systems and IoT
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+
+                    <article class="semester__card mix seventh">
+
+                        <h3 class="semester__price">7th Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/cs/7sem/">
+                            <p class="semester_text">
+                                <span><strong>18CS71 :</strong> Entrepreneurship and Management
+                                </span>
+                            </p>
+                        </a>
+                        <a href="">
+                            <p class="semester_text">
+                                <span><strong>18CS72 :</strong> Network Programming
+                                </span>
+                            </p>
+                        </a>
+                        <a href="">
+                            <p class="semester_text">
+                                <span><strong>18CS73 :</strong> Distributed Computing
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo01-removebg-preview.png" alt="" class="footer__logo-img">
+                        Git Notes
+                    </a>
+
+                    <p class="footer__description">
+                        We provide notes & question papers <br> of all engineering branches.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Our Services</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Notes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Question Papers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Results</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Support</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Support center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Available On</h3>
+
+                    <div class="footer__aviables">
+                        <img src="assets/img/aviable1.png" alt="" class="footer__aviable-img">
+                        <img src="assets/img/aviable2.png" alt="" class="footer__aviable-img">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <span class="footer__copy">&#169; GitNotes. All rigths reserved</span>
-    </footer>
+            <span class="footer__copy">&#169; GitNotes. All rigths reserved</span>
+        </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-    </a>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
 
-    <!-- ===============Mixitup JS============== -->
-    <script src="assets/js/mixitup.min.js"></script>
+        <!-- ===============Mixitup JS============== -->
+        <script src="assets/js/mixitup.min.js"></script>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7753413277186634"
-     crossorigin="anonymous">
-    </script>
-</body>
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7753413277186634"
+            crossorigin="anonymous">
+            </script>
+    </body>

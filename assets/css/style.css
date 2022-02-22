@@ -703,6 +703,10 @@ button {
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .upload_notes{
+   display: none;
+  }
 }
 
 @media screen and (min-width: 772px) {
