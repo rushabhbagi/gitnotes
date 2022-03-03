@@ -523,7 +523,7 @@ button {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-.home__icon{
+.home__icon {
   margin: 10px;
   color: var(--first-color);
   font-size: 1.25rem;
@@ -704,8 +704,8 @@ button {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .upload_notes{
-   display: none;
+  .upload_notes {
+    display: none;
   }
 }
 
@@ -834,6 +834,10 @@ button {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 } */
+
+.nav_button {
+  cursor: pointer;
+}
 
 .nav_button :hover {
   background: var(--first-color);
