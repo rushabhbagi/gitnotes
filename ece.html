@@ -1,344 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <!--=============== BOXICONS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!--=============== SWIPER ECS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--=============== SWIPER ECS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!--=============== ECS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+        <!--=============== ECS ===============-->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Electronics and Communincations</title>
-</head>
+        <title>Electronics and Communincations</title>
+    </head>
 
-<body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="./index.html" class="nav__logo">
-                <img src="assets/img/logo01-removebg-preview.png" alt="gitnotes-ec" class="nav__logo-img">
-                Git Notes
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSeyTsjuMM_huGPIX-s8bufGInf0UlOGbsZMjT7N9J82w-LrjQ/viewform" class="nav__link">Upload Now</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#results" class="nav__link">Results</a>
-                    </li>
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-            </div>
-            <div class="nav__btns">
-               
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-            </div>
-
-        </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="assets/img/ec-removebg-preview.png" alt="" class="home__img">
-
-                <div class="home__data">
-                    <h1 class="home__title">Department of <br> Electronics & Communications</h1>
-                    <p class="home__description">
-                    </p>
-                    <a href="#" class="button">Download now</a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== semester ====================-->
-        <section class="semester section container" id="semester">
-            <h2 class="section__title">Semester wise notes</h2>
-
-            <div class="nav semester_nav">
-                <span class="nav_button active-Semester" data-filter="all">ALL</span>
-                <span class="nav_button" data-filter=".third">3rd</span>
-                <span class="nav_button" data-filter=".forth">4th</span>
-                <span class="nav_button" data-filter=".fifth">5th</span>
-                <span class="nav_button" data-filter=".sixth">6th</span>
-                <span class="nav_button" data-filter=".seventh">7th</span>
-                <span class="nav_button" data-filter=".eighth">8th</span>
-            </div>
-
-            <div class="semester__container grid">
-                <article class="semester__card mix third">
-                    <h3 class="semester__price">3rd Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/ec/3sem/m3.html">
-                        <p class="semester_text">
-                            <span><strong>18MATEC31 :</strong> Statical Numerical Fourier Techniques
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/3sem/18ec32.html">
-                        <p class="semester_text">
-                            <span><strong>18EC32 :</strong> Analog Electronics
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/3sem/18ec33.html">
-                        <p class="semester_text">
-                            <span><strong>18EC33 :</strong> Digital Electronics
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/3sem/18ec34.html">
-                        <p class="semester_text">
-                            <span><strong>18EC34 :</strong> Signals and Systems
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/3sem/18ec35.html">
-                        <p class="semester_text">
-                            <span><strong>18EC35 :</strong> Network Analysis
-                            </span>
-                        </p>
-                    </a>
-                    <img src="./assets/img/line1.1.png" alt="">
-                    <a href="./assets/modules/ec/3sem/18dmatec31.html">
-                        <p class="semester_text">
-                            <span><strong>18DMATEC31 :</strong> Calculus, Fourier Analysis and Linear Algebra
-                            </span>
-                        </p>
-                    </a>
-
-                </article>
-
-                <article class="semester__card mix forth">
-                    <h3 class="semester__price">4th Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/ec/4sem/m4.html">
-                        <p class="semester_text">
-                            <span><strong>18MATEC41 :</strong> Partial Differential Equations, Sampling Techniques and
-                                Transforms
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/4sem/18ec42.html">
-                        <p class="semester_text">
-                            <span><strong>18EC42 :</strong> Microcontrollers
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/4sem/18ec43.html">
-                        <p class="semester_text">
-                            <span><strong>18EC43 :</strong> Control Systems
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/4sem/18ec44.html">
-                        <p class="semester_text">
-                            <span><strong>18EC44 :</strong> DSP & Alogorithms
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/4sem/18ec45.html">
-                        <p class="semester_text">
-                            <span><strong>18EC45 :</strong> Communication Theory and Techniques
-                            </span>
-                        </p>
-                    </a>
-                    <img src="./assets/img/line1.1.png" alt="">
-                    <!-- TODO: -->
-                    <a href="./assets/modules/ec/4sem/">
-                        <p class="semester_text">
-                            <span><strong>18DMATEC41 :</strong> Vector Calculus, Laplace Transforms and Probability
-                            </span>
-                        </p>
-                    </a>
-                </article>
-
-                <article class="semester__card mix fifth">
-
-                    <h3 class="semester__price">5th Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/ec/5sem/18ec51.html">
-                        <p class="semester_text">
-                            <span><strong>18EC51 :</strong> Operating System
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/5sem/18ec52.html">
-                        <p class="semester_text">
-                            <span><strong>18EC52 :</strong> CMOS VLSI Design
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/5sem/18ec53.html">
-                        <p class="semester_text">
-                            <span><strong>18EC53 :</strong> Information Theory and Digital Communication
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/5sem/18ec54.html">
-                        <p class="semester_text">
-                            <span><strong>18EC54 :</strong> Engineering Electromagnetics
-                            </span>
-                        </p>
-                    </a>
-                    <img src="./assets/img/line1.1.png" alt="">
-                    <a href="">
-                        <p class="semester_text">
-                            <span><strong>18DMATEC51 :</strong>Partial Differential Equations, Z Transforms and
-                                Stochastic
-                            </span>
-                        </p>
-                    </a>
-                </article>
-
-                <article class="semester__card mix sixth">
-
-                    <h3 class="semester__price">6th Semester</h3>
-                    <span class="semester__title"></span>
-                    <a href="./assets/modules/ec/6sem/18ec61.html">
-                        <p class="semester_text">
-                            <span><strong>18EC61 :</strong> Image Processing and Computer Vision
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/6sem/18ec62.html">
-                        <p class="semester_text">
-                            <span><strong>18EC62 :</strong> Computer Communication Networks
-                            </span>
-                        </p>
-                    </a>
-                    <a href="./assets/modules/ec/6sem/18ec63.html">
-                        <p class="semester_text">
-                            <span><strong>18EC63 :</strong> Sensors and Signal Conditioning
-                            </span>
-                        </p>
-                    </a>
-                </article>
-
-                <article class="semester__card mix seventh">
-
-                    <h3 class="semester__price">7th Semester</h3>
-                    <span class="semester__title"></span>
-                    <!-- TODO: -->
-                    <a href="./assets/modules/ec/7sem/">
-                        <p class="semester_text">
-                            <span><strong>18EC71 :</strong> Management and Entrepreneurship With Branch specific case
-                                studies
-                            </span>
-                        </p>
-                    </a>
-                    <a href="">
-                        <p class="semester_text">
-                            <span><strong>18EC72 :</strong> Microwave and Antenna Engineering
-                            </span>
-                        </p>
-                    </a>
-                    <a href="">
-                        <p class="semester_text">
-                            <span><strong>18EC73 :</strong> Wireless and Mobile Communication
-                            </span>
-                        </p>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div>
-                <a href="#" class="footer__logo">
-                    <img src="assets/img/logo01-removebg-preview.png" alt="" class="footer__logo-img">
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="./index.html" class="nav__logo">
+                    <img src="assets/img/logo01-removebg-preview.png" alt="gitnotes-ec" class="nav__logo-img">
                     Git Notes
                 </a>
 
-                <p class="footer__description">
-                    We provide notes & question papers <br> of all engineering branches.
-                </p>
-            </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSeyTsjuMM_huGPIX-s8bufGInf0UlOGbsZMjT7N9J82w-LrjQ/viewform"
+                                class="nav__link">Upload Now</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#results" class="nav__link">Results</a>
+                        </li>
+                    </ul>
 
-            <div>
-                <h3 class="footer__title">Our Services</h3>
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="nav__btns">
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Notes</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Question Papers</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Results</a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </div>
 
-            <div>
-                <h3 class="footer__title">Support</h3>
+            </nav>
+        </header>
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">FAQs</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Support center</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/ec-removebg-preview.png" alt="" class="home__img">
 
-            <div>
-                <h3 class="footer__title">Available On</h3>
+                    <div class="home__data">
+                        <h1 class="home__title">Department of <br> Electronics & Communications</h1>
+                        <p class="home__description">
+                        </p>
+                        <a href="#" class="button">Download now</a>
+                    </div>
+                </div>
+            </section>
 
-                <div class="footer__aviables">
-                    <img src="assets/img/aviable1.png" alt="" class="footer__aviable-img">
-                    <img src="assets/img/aviable2.png" alt="" class="footer__aviable-img">
+            <!--==================== semester ====================-->
+            <section class="semester section container" id="semester">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7753413277186634"
+                    crossorigin="anonymous"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+                    data-ad-layout-key="+2r+re+3l-if+7r" data-ad-client="ca-pub-7753413277186634"
+                    data-ad-slot="7444255452"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h2 class="section__title">Semester wise notes</h2>
+
+                <div class="nav semester_nav">
+                    <span class="nav_button active-Semester" data-filter="all">ALL</span>
+                    <span class="nav_button" data-filter=".third">3rd</span>
+                    <span class="nav_button" data-filter=".forth">4th</span>
+                    <span class="nav_button" data-filter=".fifth">5th</span>
+                    <span class="nav_button" data-filter=".sixth">6th</span>
+                    <span class="nav_button" data-filter=".seventh">7th</span>
+                    <span class="nav_button" data-filter=".eighth">8th</span>
+                </div>
+
+                <div class="semester__container grid">
+                    <article class="semester__card mix third">
+                        <h3 class="semester__price">3rd Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/ec/3sem/m3.html">
+                            <p class="semester_text">
+                                <span><strong>18MATEC31 :</strong> Statical Numerical Fourier Techniques
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/3sem/18ec32.html">
+                            <p class="semester_text">
+                                <span><strong>18EC32 :</strong> Analog Electronics
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/3sem/18ec33.html">
+                            <p class="semester_text">
+                                <span><strong>18EC33 :</strong> Digital Electronics
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/3sem/18ec34.html">
+                            <p class="semester_text">
+                                <span><strong>18EC34 :</strong> Signals and Systems
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/3sem/18ec35.html">
+                            <p class="semester_text">
+                                <span><strong>18EC35 :</strong> Network Analysis
+                                </span>
+                            </p>
+                        </a>
+                        <img src="./assets/img/line1.1.png" alt="">
+                        <a href="./assets/modules/ec/3sem/18dmatec31.html">
+                            <p class="semester_text">
+                                <span><strong>18DMATEC31 :</strong> Calculus, Fourier Analysis and Linear Algebra
+                                </span>
+                            </p>
+                        </a>
+
+                    </article>
+
+                    <article class="semester__card mix forth">
+                        <h3 class="semester__price">4th Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/ec/4sem/m4.html">
+                            <p class="semester_text">
+                                <span><strong>18MATEC41 :</strong> Partial Differential Equations, Sampling Techniques
+                                    and
+                                    Transforms
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/4sem/18ec42.html">
+                            <p class="semester_text">
+                                <span><strong>18EC42 :</strong> Microcontrollers
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/4sem/18ec43.html">
+                            <p class="semester_text">
+                                <span><strong>18EC43 :</strong> Control Systems
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/4sem/18ec44.html">
+                            <p class="semester_text">
+                                <span><strong>18EC44 :</strong> DSP & Alogorithms
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/4sem/18ec45.html">
+                            <p class="semester_text">
+                                <span><strong>18EC45 :</strong> Communication Theory and Techniques
+                                </span>
+                            </p>
+                        </a>
+                        <img src="./assets/img/line1.1.png" alt="">
+                        <!-- TODO: -->
+                        <a href="./assets/modules/ec/4sem/">
+                            <p class="semester_text">
+                                <span><strong>18DMATEC41 :</strong> Vector Calculus, Laplace Transforms and Probability
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+
+                    <article class="semester__card mix fifth">
+
+                        <h3 class="semester__price">5th Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/ec/5sem/18ec51.html">
+                            <p class="semester_text">
+                                <span><strong>18EC51 :</strong> Operating System
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/5sem/18ec52.html">
+                            <p class="semester_text">
+                                <span><strong>18EC52 :</strong> CMOS VLSI Design
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/5sem/18ec53.html">
+                            <p class="semester_text">
+                                <span><strong>18EC53 :</strong> Information Theory and Digital Communication
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/5sem/18ec54.html">
+                            <p class="semester_text">
+                                <span><strong>18EC54 :</strong> Engineering Electromagnetics
+                                </span>
+                            </p>
+                        </a>
+                        <img src="./assets/img/line1.1.png" alt="">
+                        <a href="">
+                            <p class="semester_text">
+                                <span><strong>18DMATEC51 :</strong>Partial Differential Equations, Z Transforms and
+                                    Stochastic
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+
+                    <article class="semester__card mix sixth">
+
+                        <h3 class="semester__price">6th Semester</h3>
+                        <span class="semester__title"></span>
+                        <a href="./assets/modules/ec/6sem/18ec61.html">
+                            <p class="semester_text">
+                                <span><strong>18EC61 :</strong> Image Processing and Computer Vision
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/6sem/18ec62.html">
+                            <p class="semester_text">
+                                <span><strong>18EC62 :</strong> Computer Communication Networks
+                                </span>
+                            </p>
+                        </a>
+                        <a href="./assets/modules/ec/6sem/18ec63.html">
+                            <p class="semester_text">
+                                <span><strong>18EC63 :</strong> Sensors and Signal Conditioning
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+
+                    <article class="semester__card mix seventh">
+
+                        <h3 class="semester__price">7th Semester</h3>
+                        <span class="semester__title"></span>
+                        <!-- TODO: -->
+                        <a href="./assets/modules/ec/7sem/">
+                            <p class="semester_text">
+                                <span><strong>18EC71 :</strong> Management and Entrepreneurship With Branch specific
+                                    case
+                                    studies
+                                </span>
+                            </p>
+                        </a>
+                        <a href="">
+                            <p class="semester_text">
+                                <span><strong>18EC72 :</strong> Microwave and Antenna Engineering
+                                </span>
+                            </p>
+                        </a>
+                        <a href="">
+                            <p class="semester_text">
+                                <span><strong>18EC73 :</strong> Wireless and Mobile Communication
+                                </span>
+                            </p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo01-removebg-preview.png" alt="" class="footer__logo-img">
+                        Git Notes
+                    </a>
+
+                    <p class="footer__description">
+                        We provide notes & question papers <br> of all engineering branches.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Our Services</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Notes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Question Papers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Results</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Support</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Support center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Available On</h3>
+
+                    <div class="footer__aviables">
+                        <img src="assets/img/aviable1.png" alt="" class="footer__aviable-img">
+                        <img src="assets/img/aviable2.png" alt="" class="footer__aviable-img">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <span class="footer__copy">&#169; GitNotes. All rigths reserved</span>
-    </footer>
+            <span class="footer__copy">&#169; GitNotes. All rigths reserved</span>
+        </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-    </a>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
 
-    <!-- ===============Mixitup JS============== -->
-    <script src="assets/js/mixitup.min.js"></script>
+        <!-- ===============Mixitup JS============== -->
+        <script src="assets/js/mixitup.min.js"></script>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-</body>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
